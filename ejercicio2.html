@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo de Roles ARIA</title>
+    <style>
+        .tabs {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .tab-list {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-bottom: 2px solid #ccc;
+        }
+        .tab-item button {
+            background-color: #f1f1f1;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+            font-size: 16px;
+        }
+        .tab-item button.active {
+            background-color: #e0e0e0;
+            border-bottom: 2px solid #fff;
+        }
+        .tab-panel {
+            padding: 20px;
+        }
+        .tab-panel.hidden {
+            display: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Análisis de Ventas Trimestrales</h1>
+
+    <div class="tabs">
+        <ul class="tab-list" role="tablist">
+            <li class="tab-item">
+                <button id="tab-1" role="tab" aria-controls="panel-1" aria-selected="true" class="active">Resumen</button>
+            </li>
+            <li class="tab-item">
+                <button id="tab-2" role="tab" aria-controls="panel-2" aria-selected="false">Detalles</button>
+            </li>
+            <li class="tab-item">
+                <button id="tab-3" role="tab" aria-controls="panel-3" aria-selected="false">Gráfica</button>
+            </li>
+        </ul>
+
+        <div id="panel-1" class="tab-panel" role="tabpanel">
+            <h2>Resumen Trimestral</h2>
+            <p>Este trimestre las ventas han superado las expectativas, con un crecimiento del 15% en comparación con el trimestre anterior. El producto X fue el de mayor rendimiento.</p>
+        </div>
+
+        <div id="panel-2" class="tab-panel hidden" role="tabpanel">
+            <h2>Detalles de Ventas por Producto</h2>
+            <table role="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Unidades Vendidas</th>
+                        <th scope="col">Ingresos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td role="cell">Producto A</td>
+                        <td role="cell">150</td>
+                        <td role="cell">$15,000</td>
+                    </tr>
+                    <tr>
+                        <td role="cell">Producto B</td>
+                        <td role="cell">220</td>
+                        <td role="cell">$22,000</td>
+                    </tr>
+                    <tr>
+                        <td role="cell">Producto C</td>
+                        <td role="cell">180</td>
+                        <td role="cell">$18,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="panel-3" class="tab-panel hidden" role="tabpanel">
+            <h2>Gráfica de Crecimiento</h2>
+            <p>La siguiente gráfica muestra la tendencia de crecimiento de las ventas en los últimos tres trimestres.</p>
+            <img src="https://i.ibb.co/b3nL32c/graph.png" alt="Gráfica que muestra un crecimiento constante en las ventas trimestrales, con una línea ascendente." role="img">
+        </div>
+    </div>
+
+    <script>
+        const tabs = document.querySelectorAll('[role="tab"]');
+        const panels = document.querySelectorAll('[role="tabpanel"]');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', (e) => {
+                const targetPanelId = e.target.getAttribute('aria-controls');
+                
+                // Oculta todos los paneles y desactiva todas las pestañas
+                panels.forEach(panel => {
+                    panel.classList.add('hidden');
+                });
+                tabs.forEach(t => {
+                    t.setAttribute('aria-selected', 'false');
+                    t.classList.remove('active');
+                });
+
+                // Muestra el panel objetivo y activa la pestaña
+                document.getElementById(targetPanelId).classList.remove('hidden');
+                e.target.setAttribute('aria-selected', 'true');
+                e.target.classList.add('active');
+            });
+        });
+    </script>
+
+</body>
+</html>

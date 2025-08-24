@@ -1,1 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibilidad Web - Interfaz del Usuario</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        .header {
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .header h1 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .section {
+            padding: 20px;
+        }
+        .section h2 {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .section p {
+            font-size: 16px;
+        }
+        .img-container {
+            display: flex;
+            align-items: center;
+        }
+        .img-container img {
+            margin-right: 15px;
+        }
+        .img-container p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .links-container {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .links-container a {
+            text-decoration: underline; /* Mejora la visibilidad de los enlaces */
+            font-weight: bold;
+        }
+        .links-container p {
+            margin: 5px 0;
+        }
+        .link-read-more {
+            color: #cc0000;
+        }
+        .link-more-resources {
+            color: #0000cc;
+        }
+        .contact-form {
+            background-color: #90ee90;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .contact-form h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 95%;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #0000ff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+        }
+        .tools-section {
+            background-color: #ffc0cb;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .tools-section h3 {
+            font-size: 18px;
+        }
+        .tool-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .tool-item img {
+            margin-right: 10px;
+        }
+        .tool-item span {
+            font-weight: bold;
+        }
+        .tool-item a {
+            background-color: #ff8c00;
+            color: black;
+            padding: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: auto;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Guía de Accesibilidad Web</h1>
+    </header>
+    
+    <main>
+        <section class="section">
+            <div class="img-container">
+                <img src="https://addaw.org//cdn/admin/assets/images/galeria/SRypBs4xEP7LUMVzbO1o.jpg" alt="Ilustración de una persona usando un sitio web accesible." width="150" height="150">
+                <p>Accesibilidad visual en sitios web.</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Introducción a la Accesibilidad Web</h2>
+            <p>En esta página aprenderás conceptos básicos sobre cómo mejorar la accesibilidad de tus sitios web.</p>
+        </section>
+        
+        <section class="links-container" aria-label="Enlaces de recursos">
+            <p>
+                <span>Guía completa: </span>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" class="link-read-more" aria-label="Clic aquí para leer más sobre la guía completa de accesibilidad">
+                    Clic aquí para leer más
+                </a>
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility" class="link-more-resources" aria-label="Más recursos sobre accesibilidad web">
+                    Más recursos sobre accesibilidad
+                </a>
+            </p>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Formulario de Contacto sobre Accesibilidad Web</h2>
+            <form>
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico">
+                </div>
+                <div>
+                    <label for="preguntas">Escribe tus preguntas sobre accesibilidad</label>
+                    <textarea id="preguntas" name="preguntas" placeholder="Escribe tus preguntas sobre accesibilidad"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
+        <section class="tools-section">
+            <h3>Herramientas de Accesibilidad</h3>
+            <div class="tool-list">
+                <div class="tool-item">
+                    <img src="https://addaw.org//cdn/admin/assets/images/galeria/SRypBs4xEP7LUMVzbO1o.jpg" alt="Ícono de un lector de pantalla." width="100" height="100">
+                    <span>Lector de Pantalla</span>
+                    <a href="#" role="button" aria-label="Descargar Lector de Pantalla">Descargar</a>
+                </div>
+                <div class="tool-item">
+                    <img src="https://addaw.org//cdn/admin/assets/images/galeria/SRypBs4xEP7LUMVzbO1o.jpg" alt="Ícono de una herramienta de contraste." width="100" height="100">
+                    <span>Contrast Checker</span>
+                    <a href="#" role="button" aria-label="Descargar Contrast Checker">Descargar</a>
+                </div>
+                <div class="tool-item">
+                    <img src="https://addaw.org//cdn/admin/assets/images/galeria/SRypBs4xEP7LUMVzbO1o.jpg" alt="Ícono de un validador WCAG." width="100" height="100">
+                    <span>Validador WCAG</span>
+                    <a href="#" role="button" aria-label="Descargar Validador WCAG">Descargar</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2024 Accesibilidad Web - Interfaz del Usuario</p>
+        <p>Promoviendo la inclusión digital</p>
+        <p>
+            <a href="https://accesibilidad.com/privacidad">Política de Privacidad</a> |
+            <a href="https://accesibilidad.com/terminos">Términos y Condiciones</a>
+        </p>
+    </footer>
+</body>
+</html>

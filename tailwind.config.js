@@ -1,26 +1,16 @@
 module.exports = {
   content: [
-    "./index.html"
+    "./productos.html"
   ],
   theme: {
     extend: {
       colors: {
-        brand: '#1e40af',
+        hutRed: "#C1272D",
+        hutGreen: "#7DBE31",
+        hutGray: "#E5E7EB",
       },
-      spacing: {
-        72: '18rem',
-      },
-      screens: {
-        xs: '400px',
-      },
-      width: {
-        'custom-w': '350px',
-      },
-      minWidth: {
-        'custom-min-w': '200px',
-      },
-      minHeight: {
-        'custom-min-h': '300px',
+      fontFamily: {
+        hut: ['"Roboto"', 'sans-serif'],
       },
     },
   },

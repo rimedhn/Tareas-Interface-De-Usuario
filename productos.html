@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Listado de Productos</title>
-  <!-- Tailwind CDN para desarrollo en GitHub Pages -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -35,235 +34,298 @@
     >
       <!-- Producto 1 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.dominos.co.uk/media/uk_pizza_hut_cheese_mediana.png" alt="Pizza Hut Cheese Mediana" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">HUT CHEESE MEDIANA</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.dominos.co.uk/media/uk_pizza_hut_cheese_mediana.png" alt="Pizza Hut Cheese Mediana" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">HUT CHEESE MEDIANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza Hut Cheese en presentación de cuatro porciones cargadas con abundante queso mozzarella a la orilla.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 139.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 139.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 2 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.dominos.co.uk/media/uk_pizza_cheesy_roni.png" alt="Pizza Cheesy-Roni" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">PIZZA CHEESY-RONI</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.dominos.co.uk/media/uk_pizza_cheesy_roni.png" alt="Pizza Cheesy-Roni" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">PIZZA CHEESY-RONI</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza Cheesy-Roni con extra queso mozzarella y topping pepperoni.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 129.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 129.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 3 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Pizza Pepperoni Clásica" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">PEPPERONI CLÁSICA</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Pizza Pepperoni Clásica" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">PEPPERONI CLÁSICA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza tradicional con salsa de tomate, queso mozzarella y abundantes rodajas de pepperoni.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 129.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 129.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 4 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1548365328-5c8b456c03a1?auto=format&fit=crop&w=400&q=80" alt="Pizza Vegetariana" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">VEGETARIANA</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1548365328-5c8b456c03a1?auto=format&fit=crop&w=400&q=80" alt="Pizza Vegetariana" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">VEGETARIANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza con mezcla de vegetales frescos: pimientos, cebolla, aceitunas, tomate y champiñones.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 135.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 135.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 5 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1464306076886-debede13a262?auto=format&fit=crop&w=400&q=80" alt="Pizza Suprema" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">SUPREMA</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1464306076886-debede13a262?auto=format&fit=crop&w=400&q=80" alt="Pizza Suprema" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">SUPREMA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza con pepperoni, jamón, pimientos, cebolla, aceitunas y extra queso mozzarella.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 145.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 145.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 6 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Pizza Hawaiana" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">HAWAIANA</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Pizza Hawaiana" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">HAWAIANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza con jamón, piña y queso mozzarella, combinación favorita de muchos.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 139.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 139.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 7 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1519864600265-abb8b9e2ebc7?auto=format&fit=crop&w=400&q=80" alt="Pizza Cuatro Quesos" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">CUATRO QUESOS</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1519864600265-abb8b9e2ebc7?auto=format&fit=crop&w=400&q=80" alt="Pizza Cuatro Quesos" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">CUATRO QUESOS</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza con mezcla de mozzarella, parmesano, emmental y queso azul, para los amantes del queso.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 149.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 149.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 8 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0723c6a?auto=format&fit=crop&w=400&q=80" alt="Pizza Mexicana" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">MEXICANA</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0723c6a?auto=format&fit=crop&w=400&q=80" alt="Pizza Mexicana" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">MEXICANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza con chorizo, jalapeños, cebolla y queso mozzarella para los que buscan picante.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 142.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 142.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 9 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Pizza BBQ Pollo" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">BBQ POLLO</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Pizza BBQ Pollo" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">BBQ POLLO</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza con pollo a la BBQ, cebolla morada y queso mozzarella sobre salsa barbacoa.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 139.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 139.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
       <!-- Producto 10 -->
       <article class="bg-white rounded-lg shadow p-2 flex flex-col">
-        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=400&q=80" alt="Pizza Margherita" class="rounded-lg mb-2 w-full h-40 object-cover">
-        <h2 class="text-hutRed font-bold text-center text-lg mb-1">MARGHERITA</h2>
-        <p class="text-gray-700 text-sm mb-2 text-center">
+        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=400&q=80" alt="Pizza Margherita" class="rounded-lg mb-2 w-full h-40 object-cover producto-img">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1 producto-nombre">MARGHERITA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center producto-desc">
           Pizza italiana con salsa de tomate, mozzarella, albahaca fresca y un toque de aceite de oliva.
         </p>
         <div class="mt-auto pt-2 border-t">
           <div class="flex justify-between items-center mb-2">
             <span class="font-bold text-xs">DESDE</span>
-            <span class="text-hutRed font-bold">LPS. 125.00</span>
+            <span class="text-hutRed font-bold producto-precio">LPS. 125.00</span>
           </div>
           <div class="flex justify-between items-center">
             <span class="font-bold text-xs">CANTIDAD:</span>
             <span class="flex items-center gap-1">
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
-              <span class="font-bold">1</span>
-              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-menor">-</button>
+              <span class="font-bold cantidad-numero">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm cantidad-mayor">+</button>
             </span>
-            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded btn-ordenar">ORDENAR</button>
           </div>
         </div>
       </article>
     </section>
   </main>
+
+  <!-- Modal de éxito -->
+  <div id="modal-exito" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-6 shadow-lg w-full max-w-sm text-center relative">
+      <button id="cerrar-modal" class="absolute top-2 right-2 text-hutRed font-bold text-xl">&times;</button>
+      <h2 class="text-hutGreen text-xl font-bold mb-2">¡Producto agregado!</h2>
+      <div id="modal-detalles" class="mb-4 text-left"></div>
+      <button id="btn-modal-ok" class="bg-hutGreen text-white px-6 py-2 rounded font-bold">OK</button>
+    </div>
+  </div>
+
+  <script>
+    // Contador de cantidad por producto
+    document.querySelectorAll('article').forEach(card => {
+      const btnMenor = card.querySelector('.cantidad-menor');
+      const btnMayor = card.querySelector('.cantidad-mayor');
+      const numero = card.querySelector('.cantidad-numero');
+      btnMenor.addEventListener('click', () => {
+        let valor = parseInt(numero.textContent, 10);
+        if (valor > 1) numero.textContent = valor - 1;
+      });
+      btnMayor.addEventListener('click', () => {
+        let valor = parseInt(numero.textContent, 10);
+        numero.textContent = valor + 1;
+      });
+
+      // Modal de éxito al ordenar
+      const btnOrdenar = card.querySelector('.btn-ordenar');
+      btnOrdenar.addEventListener('click', () => {
+        // Extraer datos del producto
+        const nombre = card.querySelector('.producto-nombre').textContent;
+        const desc = card.querySelector('.producto-desc').textContent;
+        const precio = card.querySelector('.producto-precio').textContent;
+        const cantidad = numero.textContent;
+        const imgSrc = card.querySelector('.producto-img').src;
+
+        // Mostrar en el modal
+        const modal = document.getElementById('modal-exito');
+        const detalles = document.getElementById('modal-detalles');
+        detalles.innerHTML = `
+          <div class="flex items-center gap-3 mb-3">
+            <img src="${imgSrc}" alt="${nombre}" class="w-16 h-16 object-cover rounded">
+            <div>
+              <div class="font-bold text-hutRed">${nombre}</div>
+              <div class="text-xs">${desc}</div>
+            </div>
+          </div>
+          <div><span class="font-bold">Cantidad:</span> ${cantidad}</div>
+          <div><span class="font-bold">Precio:</span> ${precio}</div>
+          <div class="mt-2 text-hutGreen font-bold">¡Tu producto ha sido agregado a la orden!</div>
+        `;
+        modal.classList.remove('hidden');
+      });
+    });
+
+    // Cierre del modal
+    document.getElementById('cerrar-modal').onclick = () => {
+      document.getElementById('modal-exito').classList.add('hidden');
+    };
+    document.getElementById('btn-modal-ok').onclick = () => {
+      document.getElementById('modal-exito').classList.add('hidden');
+    };
+  </script>
 </body>
 </html>

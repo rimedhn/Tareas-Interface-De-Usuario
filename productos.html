@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Productos</title>
+  <!-- Tailwind CDN para desarrollo en GitHub Pages -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hutRed: "#C1272D",
+            hutGreen: "#7DBE31",
+            hutGray: "#E5E7EB",
+          },
+          fontFamily: {
+            hut: ['"Roboto"', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-hutGray font-hut">
+  <main class="max-w-6xl mx-auto p-4">
+    <h1 class="text-2xl font-bold mb-4 text-center">Listado de Productos</h1>
+    <section
+      class="grid gap-4
+        grid-cols-1
+        sm:grid-cols-2
+        md:grid-cols-3
+        lg:grid-cols-4"
+    >
+      <!-- Producto 1 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.dominos.co.uk/media/uk_pizza_hut_cheese_mediana.png" alt="Pizza Hut Cheese Mediana" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">HUT CHEESE MEDIANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza Hut Cheese en presentación de cuatro porciones cargadas con abundante queso mozzarella a la orilla.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 139.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 2 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.dominos.co.uk/media/uk_pizza_cheesy_roni.png" alt="Pizza Cheesy-Roni" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">PIZZA CHEESY-RONI</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza Cheesy-Roni con extra queso mozzarella y topping pepperoni.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 129.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 3 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Pizza Pepperoni Clásica" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">PEPPERONI CLÁSICA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza tradicional con salsa de tomate, queso mozzarella y abundantes rodajas de pepperoni.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 129.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 4 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1548365328-5c8b456c03a1?auto=format&fit=crop&w=400&q=80" alt="Pizza Vegetariana" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">VEGETARIANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza con mezcla de vegetales frescos: pimientos, cebolla, aceitunas, tomate y champiñones.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 135.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 5 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1464306076886-debede13a262?auto=format&fit=crop&w=400&q=80" alt="Pizza Suprema" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">SUPREMA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza con pepperoni, jamón, pimientos, cebolla, aceitunas y extra queso mozzarella.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 145.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 6 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Pizza Hawaiana" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">HAWAIANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza con jamón, piña y queso mozzarella, combinación favorita de muchos.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 139.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 7 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1519864600265-abb8b9e2ebc7?auto=format&fit=crop&w=400&q=80" alt="Pizza Cuatro Quesos" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">CUATRO QUESOS</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza con mezcla de mozzarella, parmesano, emmental y queso azul, para los amantes del queso.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 149.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 8 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1523987355523-c7b5b0723c6a?auto=format&fit=crop&w=400&q=80" alt="Pizza Mexicana" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">MEXICANA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza con chorizo, jalapeños, cebolla y queso mozzarella para los que buscan picante.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 142.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 9 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Pizza BBQ Pollo" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">BBQ POLLO</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza con pollo a la BBQ, cebolla morada y queso mozzarella sobre salsa barbacoa.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 139.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+      <!-- Producto 10 -->
+      <article class="bg-white rounded-lg shadow p-2 flex flex-col">
+        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=400&q=80" alt="Pizza Margherita" class="rounded-lg mb-2 w-full h-40 object-cover">
+        <h2 class="text-hutRed font-bold text-center text-lg mb-1">MARGHERITA</h2>
+        <p class="text-gray-700 text-sm mb-2 text-center">
+          Pizza italiana con salsa de tomate, mozzarella, albahaca fresca y un toque de aceite de oliva.
+        </p>
+        <div class="mt-auto pt-2 border-t">
+          <div class="flex justify-between items-center mb-2">
+            <span class="font-bold text-xs">DESDE</span>
+            <span class="text-hutRed font-bold">LPS. 125.00</span>
+          </div>
+          <div class="flex justify-between items-center">
+            <span class="font-bold text-xs">CANTIDAD:</span>
+            <span class="flex items-center gap-1">
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">-</button>
+              <span class="font-bold">1</span>
+              <button class="px-2 py-0.5 bg-hutGray rounded-full text-sm">+</button>
+            </span>
+            <button class="bg-hutGreen text-white font-bold px-4 py-1 rounded">ORDENAR</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
